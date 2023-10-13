@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>Debian -- The Universal Operating System</title>
+        <meta name="Description" content="Debian is an operating system and a distribution of Free Software. It is maintained and updated through the work of many users who volunteer their time and effort.">
+        <link rel="stylesheet" href="style.css">
+
+        <style>
+            .downloads{
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+
+            .download-button{
+                color: white;
+                text-decoration: none;
+                border: 1px solid lightgray;
+                padding: 15px;
+                border-radius: 20px;
+            }
+
+            .download-button:hover{
+                background-color: white;
+                color: black
+            }
+
+            .welcome-heading{
+                margin-top: 50px;
+            margin-bottom: 50px;
+            }
+
+            main > section{
+                text-align: center;
+            }
+
+            .grid-container{
+                display: grid;
+                grid-gap: 20px;
+                grid-template-columns: 1fr 1fr;
+                justify-content: center;
+            }
+
+            .grid-items{
+                border: 1px solid white;
+                border-radius: 20px;
+                text-align: center;
+            }
+
+            a[href="other-releases.html"]{
+                color: white;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <img src="assets/debian-logo.svg" alt="The Debian operating system logo" width="200">
+            <h1>Debian</h1>
+            <h2>The Universal Operating System</h2>
+
+            <nav>
+                <a href="about.html">About</a>
+                <a href="#">Documentation</a>
+                <a href="#">FAQ</a>
+                <a href="#">News</a>
+                <a href="reviews.html">Reviews</a>
+                <a href="#">Support</a>
+            </nav>
+        </header>
+        <hr>
+        <main>
+            <section class="downloads">
+                <h3><a class="download-button" href="https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-12.1.0-amd64-netinst.iso">Download</a></h3>
+                <p><a href="other-releases.html">Other releases</a></p>
+            </section>
+
+            <hr>
+
+            <section>
+               <h2 class="welcome-heading">Welcome</h2>
+
+               <div class="grid-container">
+
+                    <article class="grid-items">
+                        <h3>For Users</h3>
+
+                        <hr>
+
+                        <h4>Stability and Security</h4>
+                        <p>Debian is a Linux-based operating system for a wide range of devices including laptops, desktops and servers. We provide a reasonable default configuration for every package as well as regular security updates during the packages' lifetimes.</p>
+
+                        <h4>Smooth Upgrades</h4>
+                        <p>It's easy to keep our operating system up-to-date, whether you want to upgrade to a completely new release or just update a single package.</p>
+
+                        <h4>Foundation for Numerous Other Distributions</h4>
+                        <p>Many popular Linux distributions, like Ubuntu, Knoppix, PureOS or Tails, are based on Debian. We provide all the tools so that everyone can extend the software packages from the Debian archive with their own packages if needed.</p>
+                    </article>
+
+                    <article class="grid-items">
+                        <h3>For Enterprises</h3>
+
+                        <hr>
+
+                        <h4>Reliability</h4>
+                        <p>Debian proves its reliability every day in thousands of real world scenarios, ranging from single user laptops to super-colliders, stock exchanges and the automotive industry. It's also popular in the academic world, in science and in the public sector.</p>
+
+                        <h4>Security</h4>
+                        <p>Debian offers security support for its stable releases. Many other distributions and security researchers rely on Debian's security tracker.</p>
+
+                        <h4>Long Term Support</h4>
+                        <p>Debian's free of charge Long Term Support (LTS) version extends the lifetime of all Debian stable releases to at least 5 years. Additionally, the commercial Extended LTS initiative supports a limited set of packages for more than 5 years.</p>
+                    </article>
+
+               </div>
+            </section>
+        </main>
+
+        <footer>
+            <address>
+                <p>Contact Information:</p>
+                <p><a href="mailto:debian-project@lists.debian.org">General</a></p>
+                <p><a href="mailto:press@debian.org">Publicity & Press</a></p>
+                <p><a href="mailto:events@debian.org">Events & Conferences</a></p>
+                <p><a href="mailto:debian-devel@lists.debian.org">Development</a></p>
+            </address>
+        </footer>
+    </body>
+</html>

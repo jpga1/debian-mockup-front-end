@@ -1,0 +1,44 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: arial, sans-serif;
+}
+
+header{
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    border: 1px solid lightgray;
+    padding: 15px;
+    border-radius: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+nav a:hover{
+    background-color: white;
+    color: black
+}
+
+footer{
+    margin-top: 50px;
+}
+
+address{
+    display: flex;
+    justify-content: space-around;
+}
+
+address > p > a{
+    color: white;
+}
