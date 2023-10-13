@@ -4,10 +4,43 @@
         <meta charset="utf-8">
         <title>Debian -- The Universal Operating System</title>
         <meta name="Description" content="Debian is an operating system and a distribution of Free Software. It is maintained and updated through the work of many users who volunteer their time and effort.">
-        <link rel="stylesheet" href="style.css">
+        <!-- <link rel="stylesheet" href="style.css"> -->
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
         <style>
+
+            body{
+                background-color: black;
+            }
+
+            nav a:hover{
+                background-color: white;
+                color: black
+            }
+
             .downloads{
+                margin-top: 50px;
+            }
+
+            .download-button{
+                padding: 10px;
+            }
+
+            .download-button:hover{
+                background-color: white;
+                color: black;
+            }
+
+            .grid-items{
+                color: black
+                
+            }
+            /* .downloads{
                 margin-top: 50px;
                 margin-bottom: 50px;
             }
@@ -49,40 +82,38 @@
 
             a[href="other-releases.html"]{
                 color: white;
-            }
+            } */
         </style>
     </head>
 
-    <body>
-        <header>
+    <body class="text-white">
+        <header class="container text-center">
             <img src="assets/debian-logo.svg" alt="The Debian operating system logo" width="200">
             <h1>Debian</h1>
             <h2>The Universal Operating System</h2>
 
-            <nav>
-                <a href="about.html">About</a>
-                <a href="#">Documentation</a>
-                <a href="#">FAQ</a>
-                <a href="#">News</a>
-                <a href="reviews.html">Reviews</a>
-                <a href="#">Support</a>
+            <nav class="container row">
+                <a class="col border rounded text-decoration-none" href="about.html">About</a>
+                <a class="col border rounded text-decoration-none" href="#">Documentation</a>
+                <a class="col border rounded text-decoration-none" href="#">FAQ</a>
+                <a class="col border rounded text-decoration-none" href="#">News</a>
+                <a class="col border rounded text-decoration-none" href="reviews.html">Reviews</a>
+                <a class="col border rounded text-decoration-none" href="#">Support</a>
             </nav>
         </header>
-        <hr>
+
         <main>
-            <section class="downloads">
-                <h3><a class="download-button" href="https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-12.1.0-amd64-netinst.iso">Download</a></h3>
+            <section class="downloads container text-center">
+                <h3><a class="download-button text-decoration-none border rounded" href="https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-12.1.0-amd64-netinst.iso">Download</a></h3>
                 <p><a href="other-releases.html">Other releases</a></p>
             </section>
 
-            <hr>
-
-            <section>
+            <section class="container text-center">
                <h2 class="welcome-heading">Welcome</h2>
 
-               <div class="grid-container">
+               <div class="grid-container row">
 
-                    <article class="grid-items">
+                    <article class="grid-items jumbotron col">
                         <h3>For Users</h3>
 
                         <hr>
@@ -97,7 +128,7 @@
                         <p>Many popular Linux distributions, like Ubuntu, Knoppix, PureOS or Tails, are based on Debian. We provide all the tools so that everyone can extend the software packages from the Debian archive with their own packages if needed.</p>
                     </article>
 
-                    <article class="grid-items">
+                    <article class="grid-items jumbotron col">
                         <h3>For Enterprises</h3>
 
                         <hr>
