@@ -18,10 +18,12 @@
                 background-color: black;
             }
 
+            /*
             nav a:hover{
                 background-color: white;
                 color: black
             }
+            */
 
             .downloads{
                 margin-top: 50px;
@@ -87,11 +89,46 @@
     </head>
 
     <body class="text-white">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#"><img src="file:///C:/Users/csoj/Desktop/debian-site-front-end/assets/debian-logo.svg" height="50px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText">
+                <span class="navbar-toggler-icon">Toggle</span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Documentation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reviews.html">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Support</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    Greatest Distro Ever
+                </span>
+            </div>
+        </nav>
+
+
         <header class="container text-center">
             <img src="assets/debian-logo.svg" alt="The Debian operating system logo" width="200">
             <h1>Debian</h1>
             <h2>The Universal Operating System</h2>
 
+        <!--
             <nav class="container row">
                 <a class="col border rounded text-decoration-none" href="about.html">About</a>
                 <a class="col border rounded text-decoration-none" href="#">Documentation</a>
@@ -100,6 +137,7 @@
                 <a class="col border rounded text-decoration-none" href="reviews.html">Reviews</a>
                 <a class="col border rounded text-decoration-none" href="#">Support</a>
             </nav>
+        -->
         </header>
 
         <main>
@@ -147,13 +185,15 @@
             </section>
         </main>
 
-        <footer>
-            <address>
-                <p>Contact Information:</p>
-                <p><a href="mailto:debian-project@lists.debian.org">General</a></p>
-                <p><a href="mailto:press@debian.org">Publicity & Press</a></p>
-                <p><a href="mailto:events@debian.org">Events & Conferences</a></p>
-                <p><a href="mailto:debian-devel@lists.debian.org">Development</a></p>
+        <footer class="container text-center">
+            <address class="container">
+                <p class="row">Contact Information:</p>
+                <div class="row">
+                    <p class="col"><a href="mailto:debian-project@lists.debian.org">General</a></p>
+                    <p class="col"><a href="mailto:press@debian.org">Publicity & Press</a></p>
+                    <p class="col"><a href="mailto:events@debian.org">Events & Conferences</a></p>
+                    <p class="col"><a href="mailto:debian-devel@lists.debian.org">Development</a></p>
+                </div>
             </address>
         </footer>
     </body>
