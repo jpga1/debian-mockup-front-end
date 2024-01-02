@@ -4,101 +4,26 @@
         <meta charset="utf-8">
         <title>Debian -- The Universal Operating System</title>
         <meta name="Description" content="Debian is an operating system and a distribution of Free Software. It is maintained and updated through the work of many users who volunteer their time and effort.">
-        <!-- <link rel="stylesheet" href="style.css"> -->
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-        <style>
-
-            body{
-                background-color: black;
-            }
-
-            /*
-            nav a:hover{
-                background-color: white;
-                color: black
-            }
-            */
-
-            .downloads{
-                margin-top: 50px;
-            }
-
-            .download-button{
-                padding: 10px;
-            }
-
-            .download-button:hover{
-                background-color: white;
-                color: black;
-            }
-
-            .grid-items{
-                color: black
-                
-            }
-            /* .downloads{
-                margin-top: 50px;
-                margin-bottom: 50px;
-            }
-
-            .download-button{
-                color: white;
-                text-decoration: none;
-                border: 1px solid lightgray;
-                padding: 15px;
-                border-radius: 20px;
-            }
-
-            .download-button:hover{
-                background-color: white;
-                color: black
-            }
-
-            .welcome-heading{
-                margin-top: 50px;
-            margin-bottom: 50px;
-            }
-
-            main > section{
-                text-align: center;
-            }
-
-            .grid-container{
-                display: grid;
-                grid-gap: 20px;
-                grid-template-columns: 1fr 1fr;
-                justify-content: center;
-            }
-
-            .grid-items{
-                border: 1px solid white;
-                border-radius: 20px;
-                text-align: center;
-            }
-
-            a[href="other-releases.html"]{
-                color: white;
-            } */
-        </style>
     </head>
 
-    <body class="text-white">
+    <body class="text-white p-0 m-0" style="background-color: black;">
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#"><img src="file:///C:/Users/csoj/Desktop/debian-site-front-end/assets/debian-logo.svg" height="50px"></a>
+        <!-- navigation bar -->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html"><img src="assets/debian-logo.svg" height="50px"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText">
-                <span class="navbar-toggler-icon">Toggle</span>
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link" href="about.html" target="_blank">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Documentation</a>
@@ -110,91 +35,77 @@
                         <a class="nav-link" href="#">News</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="reviews.html">Reviews</a>
+                        <a class="nav-link" href="reviews.html" target="_blank">Reviews</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Support</a>
                     </li>
                 </ul>
-                <span class="navbar-text">
-                    Greatest Distro Ever
-                </span>
             </div>
         </nav>
 
 
-        <header class="container text-center">
+        <header class="container-fluid text-center p-5 my-5">
             <img src="assets/debian-logo.svg" alt="The Debian operating system logo" width="200">
             <h1>Debian</h1>
             <h2>The Universal Operating System</h2>
-
-        <!--
-            <nav class="container row">
-                <a class="col border rounded text-decoration-none" href="about.html">About</a>
-                <a class="col border rounded text-decoration-none" href="#">Documentation</a>
-                <a class="col border rounded text-decoration-none" href="#">FAQ</a>
-                <a class="col border rounded text-decoration-none" href="#">News</a>
-                <a class="col border rounded text-decoration-none" href="reviews.html">Reviews</a>
-                <a class="col border rounded text-decoration-none" href="#">Support</a>
-            </nav>
-        -->
         </header>
 
-        <main>
-            <section class="downloads container text-center">
-                <h3><a class="download-button text-decoration-none border rounded" href="https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-12.1.0-amd64-netinst.iso">Download</a></h3>
-                <p><a href="other-releases.html">Other releases</a></p>
+        <main class="text-center d-flex flex-column">
+            <section class="p-5 my-1">
+                <h3>
+                    <a class="download-button text-decoration-none p-2 rounded bg-primary text-white" href="#">Download</a>
+                </h3>
+                <p>
+                    <a href="other-releases.html" target="_blank">Other releases</a>
+                </p>
             </section>
 
-            <section class="container text-center">
-               <h2 class="welcome-heading">Welcome</h2>
+            <section class="my-5 text-white">
+               <h2>Welcome</h2>
 
-               <div class="grid-container row">
+                <article class="bg-secondary py-5 my-5">
+                    <h3>For Users</h3>
 
-                    <article class="grid-items jumbotron col">
-                        <h3>For Users</h3>
+                    <hr>
 
-                        <hr>
+                   <h4>Stability and Security</h4>
+                    <p>Debian is a Linux-based operating system for a wide range of devices including laptops, desktops and servers. We provide a reasonable default configuration for every package as well as regular security updates during the packages' lifetimes.</p>
 
-                        <h4>Stability and Security</h4>
-                        <p>Debian is a Linux-based operating system for a wide range of devices including laptops, desktops and servers. We provide a reasonable default configuration for every package as well as regular security updates during the packages' lifetimes.</p>
+                       <h4>Smooth Upgrades</h4>
+                    <p>It's easy to keep our operating system up-to-date, whether you want to upgrade to a completely new release or just update a single package.</p>
 
-                        <h4>Smooth Upgrades</h4>
-                        <p>It's easy to keep our operating system up-to-date, whether you want to upgrade to a completely new release or just update a single package.</p>
+                    <h4>Foundation for Numerous Other Distributions</h4>
+                    <p>Many popular Linux distributions, like Ubuntu, Knoppix, PureOS or Tails, are based on Debian. We provide all the tools so that everyone can extend the software packages from the Debian archive with their own packages if needed.</p>
+                </article>
 
-                        <h4>Foundation for Numerous Other Distributions</h4>
-                        <p>Many popular Linux distributions, like Ubuntu, Knoppix, PureOS or Tails, are based on Debian. We provide all the tools so that everyone can extend the software packages from the Debian archive with their own packages if needed.</p>
-                    </article>
+                <article class="bg-secondary py-5">
+                    <h3>For Enterprises</h3>
 
-                    <article class="grid-items jumbotron col">
-                        <h3>For Enterprises</h3>
+                    <hr>
 
-                        <hr>
+                    <h4>Reliability</h4>
+                    <p>Debian proves its reliability every day in thousands of real world scenarios, ranging from single user laptops to super-colliders, stock exchanges and the automotive industry. It's also popular in the academic world, in science and in the public sector.</p>
 
-                        <h4>Reliability</h4>
-                        <p>Debian proves its reliability every day in thousands of real world scenarios, ranging from single user laptops to super-colliders, stock exchanges and the automotive industry. It's also popular in the academic world, in science and in the public sector.</p>
+                    <h4>Security</h4>
+                    <p>Debian offers security support for its stable releases. Many other distributions and security researchers rely on Debian's security tracker.</p>
 
-                        <h4>Security</h4>
-                        <p>Debian offers security support for its stable releases. Many other distributions and security researchers rely on Debian's security tracker.</p>
-
-                        <h4>Long Term Support</h4>
-                        <p>Debian's free of charge Long Term Support (LTS) version extends the lifetime of all Debian stable releases to at least 5 years. Additionally, the commercial Extended LTS initiative supports a limited set of packages for more than 5 years.</p>
-                    </article>
-
-               </div>
+                    <h4>Long Term Support</h4>
+                    <p>Debian's free of charge Long Term Support (LTS) version extends the lifetime of all Debian stable releases to at least 5 years.Additionally, the commercial Extended LTS initiative supports a limited set of packages for more than 5 years.</p>
+                </article>
             </section>
+
+            <footer class="text-center bg-dark py-5">
+                <address class="d-flex flex-column align-items-center">
+                    <h4>Contact</h4>
+                    <div>
+                        <p><a href="mailto:debian-project@lists.debian.org">General</a></p>
+                        <p><a href="mailto:press@debian.org">Publicity & Press</a></p>
+                        <p><a href="mailto:events@debian.org">Events & Conferences</a></p>
+                        <p><a href="mailto:debian-devel@lists.debian.org">Development</a></p>
+                    </div>
+                </address>
+            </footer>
         </main>
-
-        <footer class="container text-center">
-            <address class="container">
-                <p class="row">Contact Information:</p>
-                <div class="row">
-                    <p class="col"><a href="mailto:debian-project@lists.debian.org">General</a></p>
-                    <p class="col"><a href="mailto:press@debian.org">Publicity & Press</a></p>
-                    <p class="col"><a href="mailto:events@debian.org">Events & Conferences</a></p>
-                    <p class="col"><a href="mailto:debian-devel@lists.debian.org">Development</a></p>
-                </div>
-            </address>
-        </footer>
     </body>
 </html>
